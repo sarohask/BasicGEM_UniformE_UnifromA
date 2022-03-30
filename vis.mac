@@ -1,0 +1,38 @@
+/vis/open OGL 600x600-0+0
+/vis/viewer/set/background  black
+
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+
+/vis/drawVolume
+
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
+
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+
+
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 5
+
+/tracking/storeTrajectory 0
+
+/vis/scene/add/hits
+
+
+/vis/modeling/trajectories/list
+
+/vis/scene/endOfEventAction accumulate
+
+/vis/set/textColour green
+/vis/set/textLayout right
+
+/vis/scene/add/axes    # Simple axes: x=red, y=green, z=blue.
+
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 0 90
+/tracking/storeTrajectory 1
+/tracking/verbose 2

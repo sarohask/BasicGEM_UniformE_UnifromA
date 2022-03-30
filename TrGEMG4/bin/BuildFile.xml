@@ -1,0 +1,9 @@
+<bin name="TrGEMG4" file="TrGEMG4.cc">
+  <use name="root"/>
+  <use name="rootxml"/>
+  <use name="clhep"/>
+  <use name="xerces-c"/>
+  <use name="geant4core"/>
+  <use name="hepmc"/>
+  <use name="GEMDPG/TrGEMG4"/>
+</bin>

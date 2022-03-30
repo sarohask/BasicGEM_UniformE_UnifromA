@@ -1,0 +1,10 @@
+<use name="root"/>
+<use name="rootxml"/>
+<use name="clhep"/>
+<use name="xerces-c"/>
+<use name="geant4core"/>
+<use name="hepmc"/>
+
+<export>
+  <lib   name="1"/>
+  </export>

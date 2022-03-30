@@ -1,0 +1,37 @@
+# *******************************************************************
+# * Licence and Disclaimer                                          *
+# *                                                                 *
+# * This software is copyright of Subatomic Simulations  	    *
+# * (hereafter 'SubSim'). It is provided under the terms and        *
+# * conditions described in the file 'LICENCE' included in the      *
+# * software system.  Neither the authors of this software system   * 
+# * nor SubSim make any representation or warranty, express or      * 
+# * implied, regarding this software system or assume any           *
+# * liability for its use.  Please see the file 'LICENCE' for full  *
+# * disclaimer and the limitation of liability.		     	    *
+# *******************************************************************
+# $Id: gui.mac,v 1.6 2014/05/06 12:19:35 mjt Exp $
+
+/gui/addMenu run Run
+/gui/addButton run "1 event" "/run/beamOn 1"
+/gui/addButton run "10 events" "/run/beamOn 10"
+/gui/addButton run "50 events" "/run/beamOn 50"
+/gui/addButton run "100 events" "/run/beamOn 100"
+/gui/addButton run Exit exit
+/gui/addMenu viewer Viewer
+/gui/addButton viewer Disable "/vis/disable"
+/gui/addButton viewer Enable "/vis/enable 1"
+/gui/addButton viewer Refresh "/vis/viewer/refresh"
+
+/gui/addIcon "Move" move
+/gui/addIcon "Pick" pick
+/gui/addIcon "Zoom out" zoom_out
+/gui/addIcon "Zoom in" zoom_in
+/gui/addIcon "Rotate" rotate
+/gui/addIcon "Hidden line removal" hidden_line_removal
+/gui/addIcon "Hidden line and hidden surface removal" hidden_line_and_surface_removal
+/gui/addIcon "Surfaces" solid
+/gui/addIcon "Wireframe" wireframe
+/gui/addIcon "Perspective" perspective
+/gui/addIcon "Orthographic" ortho
+/gui/addIcon "Run beam on" user_icon "/run/beamOn 10" ../run.png
